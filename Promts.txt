@@ -1,0 +1,89 @@
+Tengo que hacer un programa en Java que simule un torneo de tenis, que tendrá 16 jugadores en total, estos se clasifican de manera directa se jugará un máximo de 3 sets , si el jugador gana sus dos primeros partidos pasa de ronda automáticamente pero si hay un empate se juega el tercero como desempate estos resultados deben ser de manera aleatoria ademas se debe Mostar el ganador de cada set y el resultado final, habrá octavos, cuartos ,semifinal y final en este torneo, mi idea es tener una lista inicial con los jugadores estos deben estar enumerador del 1 a 16 ejemplo "Jugador1", luego se debe simular con una función los resultados de cada set, los partidos serán con el primer jugador con el ultimo jugador luego el segundo jugador con el penúltimo jugador y asi sucesivamente ,dandonos con el ganador. Se simularan primero los octavos de final concurrentemente, en este caso los 8 partidos de esta face ya que no afecta en lo absolutos los resultados para esta fase, luego se simulara los cuartos de final en este caso los 4 partidos y asi con a semifinal y final, la clase Callable nos devolverá una lista con los resultados de cada fase, la simulación de cada fase se realizara secuencialmente ya que se necesita los resultados de octavos de final para seguir con los 4tos de final y asi sucesivamente.Ademas necesito que el tiempo de duración de cada partido sea de un rango entre 1.5 y 2 segundos, debes utilizar la interfaz Callable asi como future y y executor service, te envío la salida esperada:===== OCTAVOS DE FINAL =====
+Jugador 1 vs Jugador 16
+Set 1: Jugador 16
+Set 2: Jugador 1
+Set 3: Jugador 1
+Ganador del partido: Jugador 1
+
+Jugador 2 vs Jugador 15
+Set 1: Jugador 2
+Set 2: Jugador 2
+Ganador del partido: Jugador 2
+
+Jugador 3 vs Jugador 14
+Set 1: Jugador 3
+Set 2: Jugador 14
+Set 3: Jugador 14
+Ganador del partido: Jugador 14
+
+Jugador 4 vs Jugador 13
+Set 1: Jugador 4
+Set 2: Jugador 13
+Set 3: Jugador 4
+Ganador del partido: Jugador 4
+
+Jugador 5 vs Jugador 12
+Set 1: Jugador 12
+Set 2: Jugador 12
+Ganador del partido: Jugador 12
+
+Jugador 6 vs Jugador 11
+Set 1: Jugador 11
+Set 2: Jugador 6
+Set 3: Jugador 6
+Ganador del partido: Jugador 6
+
+Jugador 7 vs Jugador 10
+Set 1: Jugador 10
+Set 2: Jugador 7
+Set 3: Jugador 10
+Ganador del partido: Jugador 10
+
+Jugador 8 vs Jugador 9
+Set 1: Jugador 8
+Set 2: Jugador 8
+Ganador del partido: Jugador 8
+
+===== CUARTOS DE FINAL =====
+Jugador 1 vs Jugador 2
+Set 1: Jugador 1
+Set 2: Jugador 1
+Ganador del partido: Jugador 1
+
+Jugador 14 vs Jugador 4
+Set 1: Jugador 14
+Set 2: Jugador 4
+Set 3: Jugador 14
+Ganador del partido: Jugador 14
+
+Jugador 12 vs Jugador 6
+Set 1: Jugador 6
+Set 2: Jugador 6
+Ganador del partido: Jugador 6
+
+Jugador 10 vs Jugador 8
+Set 1: Jugador 8
+Set 2: Jugador 10
+Set 3: Jugador 10
+Ganador del partido: Jugador 10
+
+===== SEMIFINAL =====
+Jugador 1 vs Jugador 14
+Set 1: Jugador 14
+Set 2: Jugador 1
+Set 3: Jugador 1
+Ganador del partido: Jugador 1
+
+Jugador 6 vs Jugador 10
+Set 1: Jugador 10
+Set 2: Jugador 6
+Set 3: Jugador 6
+Ganador del partido: Jugador 6
+
+===== FINAL =====
+Jugador 1 vs Jugador 6
+Set 1: Jugador 6
+Set 2: Jugador 6
+Ganador del partido: Jugador 6
+
+🏆 ¡Campeón del torneo: Jugador 6!
